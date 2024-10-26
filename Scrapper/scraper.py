@@ -5,6 +5,7 @@ import time
 
 
 def main():
+    
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, channel="chrome")
         page = browser.new_page()
