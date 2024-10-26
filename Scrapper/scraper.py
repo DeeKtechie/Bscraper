@@ -6,10 +6,6 @@ def main():
     
     with sync_playwright() as p:
         
-        # IMPORTANT: Change dates to future dates, otherwise it won't work
-        checkin_date = '2023-03-23'
-        checkout_date = '2023-03-24'
-        
         page_url = f'https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4As7W7rgGwAIB0gIkMGI3YWVkODAtNjhjYy00ZTc2LWE4MGEtZTg0MjBjOTE4ZTcw2AIF4AIB&sid=0326c178dad3beb7705af941d2be3173&aid=304142&checkin=2025-01-21&checkout=2025-01-22&dest_id=224&dest_type=country&latitude=38.97079849243164&longitude=-98.26319885253906&sb_travel_purpose=leisure&nflt=ht_id%3D204%3Bprice%3DGBP-min-max-1&order=popularity&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&age=&req_age=&slp_r_match_to=0&shw_aparth=0'
 
         browser = p.chromium.launch(headless=False)
